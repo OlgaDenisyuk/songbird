@@ -4,7 +4,7 @@ import './Navbar.css';
 const Navbar = () => {
     return <nav className="nav">
         <ul>
-            <li class="active">Разминка</li>
+            <li className="active">Разминка</li>
             <li>Воробьиные</li>
             <li>Лесные птицы</li>
             <li>Певчие птицы</li>

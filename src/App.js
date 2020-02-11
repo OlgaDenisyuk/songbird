@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Mission from './components/Mission/Mission';
 import Footer from './components/Footer/Footer';
 import Task from './components/Task/Task';
+import singBird from './components/Task/Player.js';
 
 function App() {
   return (
@@ -17,6 +17,9 @@ function App() {
      <Footer></Footer>
     </div>
   );
+}
+window.onload = () => {
+  singBird();
 }
 
 export default App;

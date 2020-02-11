@@ -24,4 +24,63 @@
 }
 .task-section__player{
     width:calc(100% - 220px);
+    padding: 0 30px 0 15px;
+    box-sizing: border-box;
+}
+#position-bar {
+    height: 5px;
+    color: white;
+    font-weight: bold;
+    background: #b087ff;
+    text-align: right;
+    width:0;
+    border-radius: 5px;
+ }
+ 
+ #position-bar span {
+    display: inline-block;
+    background:#f6d299;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    vertical-align: top;
+    margin-top: -7px;
+ }
+ 
+ #duration-bar {
+    background: #f6d299;
+    width: 100%;
+    border-radius: 5px;
+ }
+ .player-controls button{
+     background: url(./buttons.png) no-repeat center center;
+     width: 43px;
+     height: 43px;
+     background-size: auto 100%;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ .player-controls button:hover{
+    width: 45px;
+    height: 45px;
+ }
+
+ .player-controls button#pause{
+    background-position: 67% center;
+    display: none;
+}
+.task-section__audio{
+    display: flex;
+    align-items: center;
+}
+.player-controls{
+    width: 55px;
+}
+.player-container{
+    width: calc(100% - 55px);
+}
+#play-status{
+    margin-left: 55px;
+    font-size: 15px;
+    margin-top: -10px;
 }
