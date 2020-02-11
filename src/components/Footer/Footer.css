@@ -1,0 +1,8 @@
+.footer__btn{
+    text-align: center;
+    background: #b087ff1a;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid #b087ff6b;
+    cursor: pointer;
+}

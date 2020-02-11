@@ -1,0 +1,28 @@
+.nav{
+    background: #b087ff;
+    height: 35px;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.nav ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    margin: 0 0 15px;
+    padding: 0;
+}
+.nav li{
+    padding: 0 10px;
+    height: 100%;
+    width: calc(100%/6);   
+    box-sizing: border-box;
+    line-height: 32px;
+}
+.nav li.active{
+    background: #5e16bd;     
+}

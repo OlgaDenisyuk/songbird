@@ -1,0 +1,37 @@
+.mission{
+    display: flex;
+    margin: 0 -15px 30px -15px;
+}
+.mission > div{
+    width: 50%;
+    margin:0 15px;
+    background: #b087ff1a;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid #b087ff6b;
+}
+.mission > .mission__list{
+    padding: 0;
+}
+#mission{
+    padding: 0;
+    margin: 0;
+}
+#mission li{
+    display: block;
+    list-style: none;
+    padding: 10px 10px 10px 20px;
+    border-bottom: 1px solid #b087ff6b;
+}
+#mission li:last-child{
+    border: none;
+}
+.li-btn{
+    display: inline-block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-right: 12px;
+    background:  #303030;
+    vertical-align: middle;
+}

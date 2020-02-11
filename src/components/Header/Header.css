@@ -1,0 +1,15 @@
+.header{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo{
+    font: italic 37px/1 Georgia;
+}
+.header__logo span{
+    color:  #5e16bd;
+}
+.header__score{
+    font-size: 20px;
+}

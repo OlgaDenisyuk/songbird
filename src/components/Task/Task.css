@@ -1,0 +1,27 @@
+.task-section{
+    background: #b087ff1a;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid #b087ff6b;
+    margin: 0 0 30px;
+    display: flex;
+}
+.task-section__name{
+    border-bottom: 1px solid #b087ff6b;
+    padding: 10px 0 25px;
+    margin-bottom: 35px;
+}
+.task-section__img{
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.task-section__img img{
+    width:100%;
+    height:auto;
+    border-radius: 7px;
+}
+.task-section__player{
+    width:calc(100% - 220px);
+}
