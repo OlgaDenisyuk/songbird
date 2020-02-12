@@ -25,6 +25,7 @@ const Choice = () => {
         document.querySelector('.task-section .bird-pict').setAttribute('src', birdsData[i][j].image);
         document.querySelector('.task-section .task-section__img').style.background = 'none';
         document.getElementById('score').innerHTML = score;
+        document.querySelector('.footer__btn').classList.add('active');
     }
     else{
         target.classList.add("no-my-class");

@@ -6,3 +6,6 @@
     border: 1px solid #b087ff6b;
     cursor: pointer;
 }
+.footer__btn.active{
+    background:#257f3a;
+}
