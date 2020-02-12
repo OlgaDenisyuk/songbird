@@ -26,3 +26,14 @@
 .nav li.active{
     background: #5e16bd;     
 }
+@media (max-width: 500px) {
+    .nav {
+        height: auto;
+    }
+    .nav ul {
+        flex-wrap: wrap;
+    }
+    .nav li {
+        width: 100%;
+    }
+}

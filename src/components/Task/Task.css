@@ -1,21 +1,38 @@
 .task-section{
     background: #b087ff1a;
     border-radius: 7px;
-    padding: 10px;
     border: 1px solid #b087ff6b;
     margin: 0 0 30px;
+}
+.container{
+    border-radius: 7px;
+    padding: 10px;
     display: flex;
 }
 .task-section__name{
     border-bottom: 1px solid #b087ff6b;
-    padding: 10px 0 25px;
-    margin-bottom: 35px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+.task-section .task-section__name{
+    margin-bottom: 25px;
+}
+.task-section__species{
+    margin-bottom: 25px;
+}
+.task-section .task-section__species{
+    display: none;
 }
 .task-section__img{
     width: 200px;
     margin-right: 20px;
     border-radius: 7px;
     overflow: hidden;
+}
+.task-section .task-section__img{
+    background: url(./bird.jpg) no-repeat center center;
+    background-size: cover;
 }
 .task-section__img img{
     width:100%;
@@ -72,6 +89,7 @@
 .task-section__audio{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 .player-controls{
     width: 55px;
@@ -83,4 +101,17 @@
     margin-left: 55px;
     font-size: 15px;
     margin-top: -10px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .task-section__img {
+        margin: 0 auto;
+    }
+    .task-section__player {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

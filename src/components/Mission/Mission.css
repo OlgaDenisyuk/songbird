@@ -16,12 +16,18 @@
 #mission{
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    border-radius: 7px;
 }
 #mission li{
     display: block;
     list-style: none;
     padding: 10px 10px 10px 20px;
     border-bottom: 1px solid #b087ff6b;
+    cursor: pointer;
+}
+#mission li:hover{
+    background: #303030;
 }
 #mission li:last-child{
     border: none;
@@ -34,4 +40,24 @@
     margin-right: 12px;
     background:  #303030;
     vertical-align: middle;
+}
+.my-class .li-btn{
+    background:  #257f3a;
+}
+.no-my-class .li-btn{
+    background:  #ff5e5b;
+}
+.mission__info{
+    display: none;
+}
+@media (max-width: 800px) {
+    .mission {
+        flex-wrap: wrap;
+    }
+    .mission > div {
+        width: 100%;
+    }
+    .mission > .mission__list {
+        margin-bottom: 30px;
+    }
 }

@@ -5,7 +5,8 @@ import Navbar from './components/Navbar/Navbar';
 import Mission from './components/Mission/Mission';
 import Footer from './components/Footer/Footer';
 import Task from './components/Task/Task';
-import singBird from './components/Task/Player.js';
+import singBird from './components/Task/Playback';
+import Choice from './components/Mission/Choice';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 }
 window.onload = () => {
   singBird();
+  Choice();
 }
 
 export default App;

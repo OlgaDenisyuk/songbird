@@ -1,7 +1,7 @@
 
 function singBird(){
 
-    const player = document.getElementById("player");
+    const player = document.querySelector(".player");
     const play = document.getElementById("play");
     const pause = document.getElementById("pause");
 
