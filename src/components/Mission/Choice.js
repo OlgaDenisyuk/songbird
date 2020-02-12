@@ -4,7 +4,8 @@ import voice from './Voice';
 
 const Choice = () => {
     const mission = document.getElementById('mission');
-
+    let score = 5;
+    
     mission.addEventListener("click", e => {
     const target = e.target.closest("li");
     const value = target.innerText;
@@ -23,9 +24,11 @@ const Choice = () => {
         document.querySelector('.task-section .task-section__name').innerHTML = birdsData[i][j].name;
         document.querySelector('.task-section .bird-pict').setAttribute('src', birdsData[i][j].image);
         document.querySelector('.task-section .task-section__img').style.background = 'none';
+        document.getElementById('score').innerHTML = score;
     }
     else{
         target.classList.add("no-my-class");
+        score --;
     }
     
     document.querySelector('.mission__instruction').style.display = 'none';
