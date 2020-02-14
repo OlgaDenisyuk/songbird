@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Player = (props) => {
-    return <audio class = "player" src={props.src} hidden></audio> 
+    return <audio className = "player" src={props.src} hidden></audio> 
     }
 
 export default Player;

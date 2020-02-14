@@ -12,6 +12,7 @@ const Choice = () => {
     const mysrc = document.querySelector('.task-section audio').getAttribute('src');
     const arr = find(birdsData, value);
     const myArr = voice(birdsData, mysrc);
+    const footerBtn = document.querySelector('.footer__btn');
 
     const i = arr[0];
     const j = arr[1];
@@ -24,12 +25,14 @@ const Choice = () => {
         document.querySelector('.task-section .task-section__name').innerHTML = birdsData[i][j].name;
         document.querySelector('.task-section .bird-pict').setAttribute('src', birdsData[i][j].image);
         document.querySelector('.task-section .task-section__img').style.background = 'none';
+        footerBtn.classList.add('active');
+
         document.getElementById('score').innerHTML = score;
-        document.querySelector('.footer__btn').classList.add('active');
+        
     }
     else{
         target.classList.add("no-my-class");
-        score --;
+        if(!(footerBtn.classList.contains('active'))) score --;
     }
     
     document.querySelector('.mission__instruction').style.display = 'none';

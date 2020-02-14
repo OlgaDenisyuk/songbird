@@ -1,15 +1,15 @@
 
 function singBird(){
 
-    const player = document.querySelector(".player");
-    const play = document.getElementById("play");
-    const pause = document.getElementById("pause");
+    const player = document.querySelector(".task-section .player");
+    const play = document.querySelector(".task-section .play");
+    const pause = document.querySelector(".task-section .pause");
 
     function progressUpdate() {
-        const positionBar = document.getElementById("position-bar");
+        const positionBar = document.querySelector(".task-section .position-bar");
         positionBar.style.width = (player.currentTime / player.duration * 100)  + "%";       
       
-        const playStatus = document.getElementById("play-status");
+        const playStatus = document.querySelector(".task-section .play-status");
         playStatus.innerHTML = (Math.round(player.currentTime*100)/100) + " сек";
       
       }

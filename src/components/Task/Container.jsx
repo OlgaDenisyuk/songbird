@@ -1,5 +1,4 @@
 import React from 'react';
-import bird from './bird.jpg';
 import Player from './Player';
 import birdsData from './../Mission/Birds';
 
@@ -17,19 +16,19 @@ const nmb = Math.floor(Math.random()*5);
         <div className="task-section__audio">
             <Player src={birdsData[0][nmb].audio}></Player>
             <div className="player-controls">
-                <button id="play"></button>
-                <button id="pause"></button>
+                <button className ="play"></button>
+                <button className ="pause"></button>
             </div> 
             <div className="player-container">
-                <div id="duration-bar">
-                    <div id="position-bar"><span id="display-status"></span></div>
+                <div class="duration-bar">
+                    <div class ="position-bar"><span class="display-status"></span></div>
                 </div>
             </div>
         </div>
-        <div id="play-status"></div>
+        <div class="play-status"></div>
     </div>
     </div>
-    <div class ="descr">{props.text}</div>
+    <div className ="descr">{props.text}</div>
     </div> 
     }
 
