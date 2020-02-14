@@ -1,6 +1,7 @@
 import birdsData from './Birds';
 import find from './Find';
 import voice from './Voice';
+import LetGo from './../Footer/Nexttask';
 
 const Choice = () => {
     const mission = document.getElementById('mission');
@@ -26,9 +27,10 @@ const Choice = () => {
         document.querySelector('.task-section .bird-pict').setAttribute('src', birdsData[i][j].image);
         document.querySelector('.task-section .task-section__img').style.background = 'none';
         footerBtn.classList.add('active');
+        LetGo();
 
         document.getElementById('score').innerHTML = score;
-        
+
     }
     else{
         target.classList.add("no-my-class");

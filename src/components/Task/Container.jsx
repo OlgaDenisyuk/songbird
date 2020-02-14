@@ -20,12 +20,12 @@ const nmb = Math.floor(Math.random()*5);
                 <button className ="pause"></button>
             </div> 
             <div className="player-container">
-                <div class="duration-bar">
-                    <div class ="position-bar"><span class="display-status"></span></div>
+                <div className="duration-bar">
+                    <div className ="position-bar"><span className="display-status"></span></div>
                 </div>
             </div>
         </div>
-        <div class="play-status"></div>
+        <div className="play-status"></div>
     </div>
     </div>
     <div className ="descr">{props.text}</div>
